@@ -1,0 +1,38 @@
+{
+  "block.simplefastfood.checkout_machine": "Machine de caisse",
+
+  "item.simplefastfood.french_fries": "Frites",
+  "item.simplefastfood.rustic_fries": "Frites rustiques",
+  "item.simplefastfood.chips": "Chips",
+  "item.simplefastfood.lettuce_salad": "Salade",
+  "item.simplefastfood.tomato_salad": "Salade de tomates",
+
+  "item.simplefastfood.beef_burger": "Burger de boeuf",
+  "item.simplefastfood.pork_burger": "Burger de porc",
+  "item.simplefastfood.chicken_burger": "Burger de poulet",
+  "item.simplefastfood.mutton_burger": "Burger de mouton",
+  "item.simplefastfood.rabbit_burger": "Burger de lapin",
+  "item.simplefastfood.cod_burger": "Burger de morue",
+  "item.simplefastfood.salmon_burger": "Burger de saumon",
+  "item.simplefastfood.rotten_flesh_burger": "Burger de chair putréfiée",
+  "item.simplefastfood.chicken_nuggets": "Nuggets de poulet",
+  "item.simplefastfood.beef_cheeseburger": "Cheeseburger de boeuf",
+  "item.simplefastfood.chicken_cheeseburger": "Cheeseburger de poulet",
+  "item.simplefastfood.croque_monsieur": "Croque Monsieur",
+
+  "item.simplefastfood.cola_soda": "Soda au cola",
+  "item.simplefastfood.orange_soda": "Soda à l'orange",
+  "item.simplefastfood.lemon_soda": "Soda au citron",
+  "item.simplefastfood.creaming_soda": "Crème soda",
+  "item.simplefastfood.iced_tea": "Thé glacé",
+
+  "item.simplefastfood.ice_cream": "Glace nature",
+  "item.simplefastfood.chocolate_ice_cream": "Glace au chocolat",
+  "item.simplefastfood.red_berries_ice_cream": "Glace aux fruits rouges",
+  "item.simplefastfood.rainbow_ice_cream": "Glace multicolore",
+  "item.simplefastfood.apple_sauce": "Compote de pomme",
+  
+  "itemGroup.simplefastfood": "Simple Fast Food",
+
+  "entity.minecraft.villager.simplefastfood.fast_food_waiter": "Serveur de Fast Food"
+}

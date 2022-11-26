@@ -1,0 +1,39 @@
+{
+  "block.simplefastfood.checkout_machine": "Checkout Machine",
+
+  "item.simplefastfood.french_fries": "French Fries",
+  "item.simplefastfood.rustic_fries": "Rustic Fries",
+  "item.simplefastfood.chips": "Chips",
+  "item.simplefastfood.lettuce_salad": "Lettuce Salad",
+  "item.simplefastfood.tomato_salad": "Tomato Salad",
+
+  "item.simplefastfood.beef_burger": "Beef Burger",
+  "item.simplefastfood.pork_burger": "Pork Burger",
+  "item.simplefastfood.chicken_burger": "Chicken Burger",
+  "item.simplefastfood.mutton_burger": "Mutton Burger",
+  "item.simplefastfood.rabbit_burger": "Rabbit Burger",
+  "item.simplefastfood.cod_burger": "Cod Burger",
+  "item.simplefastfood.salmon_burger": "Salmon Burger",
+  "item.simplefastfood.rotten_flesh_burger": "Rotten Flesh Burger",
+  "item.simplefastfood.chicken_nuggets": "Chicken Nuggets",
+  "item.simplefastfood.beef_cheeseburger": "Beef Cheeseburger",
+  "item.simplefastfood.chicken_cheeseburger": "Chicken Cheeseburger",
+  "item.simplefastfood.croque_monsieur": "Croque Monsieur",
+
+
+  "item.simplefastfood.cola_soda": "Cola Soda",
+  "item.simplefastfood.orange_soda": "Orange Soda",
+  "item.simplefastfood.lemon_soda": "Lemon Soda",
+  "item.simplefastfood.creaming_soda": "Creaming Soda",
+  "item.simplefastfood.iced_tea": "Iced Tea",
+
+  "item.simplefastfood.ice_cream": "Ice Cream",
+  "item.simplefastfood.chocolate_ice_cream": "Chocolate Ice Cream",
+  "item.simplefastfood.red_berries_ice_cream": "Red Berries Ice Cream",
+  "item.simplefastfood.rainbow_ice_cream": "Rainbow Ice Cream",
+  "item.simplefastfood.apple_sauce": "Apple Sauce",
+
+  "itemGroup.simplefastfood": "Simple Fast Food",
+
+  "entity.minecraft.villager.simplefastfood.fast_food_waiter": "Fast Food Waiter"
+}

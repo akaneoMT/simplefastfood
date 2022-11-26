@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bread",
+      "item": "minecraft:cooked_pork"
+    }
+  ],
+  "result": {
+    "item": "simplefastfood:pork_burger",
+    "count": 1
+  }
+}
