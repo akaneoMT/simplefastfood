@@ -3,6 +3,7 @@ package net.akaneo.simplefastfood;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mojang.logging.LogUtils;
+import com.teamabnormals.blueprint.core.util.registry.RegistryHelper;
 import net.akaneo.simplefastfood.common.registry.ModBlocks;
 import net.akaneo.simplefastfood.common.registry.ModItems;
 import net.akaneo.simplefastfood.common.registry.ModVillagers;
@@ -25,6 +26,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
 import javax.annotation.Nonnull;

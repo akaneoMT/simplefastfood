@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "O"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:apple"
+    },
+    "O": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "simplefastfood:apple_sauce",
+    "count": 1
+  }
+}

@@ -1,9 +1,12 @@
 {
   "block.simplefastfood.checkout_machine": "Checkout Machine",
 
-  "item.simplefastfood.french_fries": "French Fries",
-  "item.simplefastfood.rustic_fries": "Rustic Fries",
+  "item.simplefastfood.fries_bowl": "Chips Bowl",
+
+  "item.simplefastfood.french_fries": "Chips",
+  "item.simplefastfood.rustic_fries": "Rustic Chips",
   "item.simplefastfood.chips": "Crisps",
+  "item.simplefastfood.onion_rings": "Onion Rings",
   "item.simplefastfood.lettuce_salad": "Lettuce Salad",
   "item.simplefastfood.tomato_salad": "Tomato Salad",
 
@@ -28,9 +31,11 @@
 
   "item.simplefastfood.ice_cream": "Ice Cream",
   "item.simplefastfood.chocolate_ice_cream": "Chocolate Ice Cream",
-  "item.simplefastfood.red_berries_ice_cream": "Red Berries Ice Cream",
+  "item.simplefastfood.sweet_berries_ice_cream": "Sweet Berries Ice Cream",
   "item.simplefastfood.rainbow_ice_cream": "Rainbow Ice Cream",
   "item.simplefastfood.apple_sauce": "Apple Sauce",
+
+  "item.simplefastfood.crab_burger": "Crab Burger",
 
   "itemGroup.simplefastfood": "Simple Fast Food",
 

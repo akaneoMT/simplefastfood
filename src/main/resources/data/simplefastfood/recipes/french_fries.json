@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "O"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:potato"
+    },
+    "O": {
+      "item": "simplefastfood:fries_bowl"
+    }
+  },
+  "result": {
+    "item": "simplefastfood:french_fries",
+    "count": 1
+  }
+}

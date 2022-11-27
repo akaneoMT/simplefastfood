@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "O"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:sweet_berries"
+    },
+    "O": {
+      "item": "simplefastfood:ice_cream"
+    }
+  },
+  "result": {
+    "item": "simplefastfood:sweet_berries_ice_cream",
+    "count": 1
+  }
+}

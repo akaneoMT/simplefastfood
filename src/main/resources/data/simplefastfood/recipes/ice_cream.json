@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "O"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:snow_bowl"
+    },
+    "O": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "result": {
+    "item": "simplefastfood:ice_cream",
+    "count": 1
+  }
+}

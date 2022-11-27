@@ -24,6 +24,9 @@ public class ModItems {
     public static Item.Properties bowlFoodItem(FoodProperties food) {
         return new Item.Properties().food(food).craftRemainder(Items.BOWL).stacksTo(16).tab(SimpleFastFood.CREATIVE_TAB);
     }
+    public static Item.Properties friesBowlFoodItem(FoodProperties food) {
+        return new Item.Properties().food(food).craftRemainder(Items.BOWL).stacksTo(16).tab(SimpleFastFood.CREATIVE_TAB);
+    }
 
     public static Item.Properties drinkItem() {
         return new Item.Properties().craftRemainder(Items.GLASS_BOTTLE).stacksTo(16).tab(SimpleFastFood.CREATIVE_TAB);
@@ -33,17 +36,23 @@ public class ModItems {
     public static final RegistryObject<Item> CHECKOUT_MACHINE = ITEMS.register("checkout_machine",
             () -> new BlockItem(ModBlocks.CHECKOUT_MACHINE.get(), basicItem()));
 
+    // Util
+    public static final RegistryObject<Item> FRIES_BOWL = ITEMS.register("fries_bowl",
+            () -> new Item(basicItem()));
+
     // Fries
     public static final RegistryObject<Item> FRENCH_FRIES = ITEMS.register("french_fries",
-            () -> new Item(foodItem(FoodValues.FRIES).tab(SimpleFastFood.CREATIVE_TAB)));
+            () -> new ConsumableItem(friesBowlFoodItem(FoodValues.FRIES).craftRemainder(ModItems.FRIES_BOWL.get())));
     public static final RegistryObject<Item> RUSTIC_FRIES = ITEMS.register("rustic_fries",
-            () -> new Item(foodItem(FoodValues.FRIES).tab(SimpleFastFood.CREATIVE_TAB)));
+            () -> new ConsumableItem(friesBowlFoodItem(FoodValues.FRIES).craftRemainder(ModItems.FRIES_BOWL.get())));
     public static final RegistryObject<Item> CHIPS = ITEMS.register("chips",
-            () -> new Item(foodItem(FoodValues.FRIES).tab(SimpleFastFood.CREATIVE_TAB)));
+            () -> new ConsumableItem(friesBowlFoodItem(FoodValues.FRIES).craftRemainder(ModItems.FRIES_BOWL.get())));
+    public static final RegistryObject<Item> ONION_RINGS = ITEMS.register("chips",
+            () -> new ConsumableItem(friesBowlFoodItem(FoodValues.FRIES).craftRemainder(ModItems.FRIES_BOWL.get())));
     public static final RegistryObject<Item> LETTUCE_SALAD = ITEMS.register("lettuce_salad",
-            () -> new ConsumableItem(foodItem(FoodValues.FRIES).craftRemainder(Items.BOWL)));
+            () -> new ConsumableItem(bowlFoodItem(FoodValues.FRIES).craftRemainder(Items.BOWL)));
     public static final RegistryObject<Item> TOMATO_SALAD = ITEMS.register("tomato_salad",
-            () -> new ConsumableItem(foodItem(FoodValues.FRIES).craftRemainder(Items.BOWL)));
+            () -> new ConsumableItem(bowlFoodItem(FoodValues.FRIES).craftRemainder(Items.BOWL)));
 
 
     // Burgers
@@ -86,13 +95,14 @@ public class ModItems {
 
     // Desserts
     public static final RegistryObject<Item> ICE_CREAM = ITEMS.register("ice_cream",
-            () -> new ConsumableItem(foodItem(FoodValues.DESSERT).craftRemainder(Items.BOWL)));
+            () -> new ConsumableItem(bowlFoodItem(FoodValues.DESSERT).craftRemainder(Items.BOWL)));
     public static final RegistryObject<Item> CHOCOLATE_ICE_CREAM = ITEMS.register("chocolate_ice_cream",
-            () -> new ConsumableItem(foodItem(FoodValues.DESSERT).craftRemainder(Items.BOWL)));
-    public static final RegistryObject<Item> RED_BERRIES_ICE_CREAM = ITEMS.register("red_berries_ice_cream",
-            () -> new ConsumableItem(foodItem(FoodValues.DESSERT).craftRemainder(Items.BOWL)));
+            () -> new ConsumableItem(bowlFoodItem(FoodValues.DESSERT).craftRemainder(Items.BOWL)));
+    public static final RegistryObject<Item> SWEET_BERRIES_ICE_CREAM = ITEMS.register("sweet_berries_ice_cream",
+            () -> new ConsumableItem(bowlFoodItem(FoodValues.DESSERT).craftRemainder(Items.BOWL)));
     public static final RegistryObject<Item> RAINBOW_ICE_CREAM = ITEMS.register("rainbow_ice_cream",
-            () -> new ConsumableItem(foodItem(FoodValues.DESSERT).craftRemainder(Items.BOWL)));
+            () -> new ConsumableItem(bowlFoodItem(FoodValues.DESSERT).craftRemainder(Items.BOWL)));
     public static final RegistryObject<Item> APPLE_SAUCE = ITEMS.register("apple_sauce",
-            () -> new ConsumableItem(foodItem(FoodValues.DESSERT).craftRemainder(Items.BOWL)));
+            () -> new ConsumableItem(bowlFoodItem(FoodValues.DESSERT).craftRemainder(Items.BOWL)));
+
 }

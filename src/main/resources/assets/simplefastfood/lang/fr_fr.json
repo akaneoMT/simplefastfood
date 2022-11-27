@@ -1,9 +1,12 @@
 {
   "block.simplefastfood.checkout_machine": "Machine de caisse",
 
+  "item.simplefastfood.fries_bowl": "Bol à frites",
+
   "item.simplefastfood.french_fries": "Frites",
   "item.simplefastfood.rustic_fries": "Frites rustiques",
   "item.simplefastfood.chips": "Chips",
+  "item.simplefastfood.onion_rings": "Onions frits",
   "item.simplefastfood.lettuce_salad": "Salade",
   "item.simplefastfood.tomato_salad": "Salade de tomates",
 
@@ -28,9 +31,11 @@
 
   "item.simplefastfood.ice_cream": "Glace nature",
   "item.simplefastfood.chocolate_ice_cream": "Glace au chocolat",
-  "item.simplefastfood.red_berries_ice_cream": "Glace aux fruits rouges",
+  "item.simplefastfood.sweet_berries_ice_cream": "Glace aux baies sucrées",
   "item.simplefastfood.rainbow_ice_cream": "Glace multicolore",
-  "item.simplefastfood.apple_sauce": "Compote de pomme",
+  "item.simplefastfood.apple_sauce": "Compote de pommes",
+
+  "item.simplefastfood.crab_burger": "Burger de crabe",
   
   "itemGroup.simplefastfood": "Simple Fast Food",
 

@@ -1,9 +1,27 @@
-plugins {
-    id 'eclipse'
-    id 'maven-publish'
-    id 'net.minecraftforge.gradle' version '5.1.+'
-    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+buildscript {
+    repositories {
+        maven { url = 'https://files.minecraftforge.net' }
+        maven { url = 'https://maven.parchmentmc.org' }
+        maven {
+            url "https://repo.spongepowered.org/repository/maven-public/"
+            // content { includeGroup "org.spongepowered" }
+        }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
+        classpath 'org.parchmentmc:librarian:1.+'
+    }
 }
+
+
+apply plugin: 'net.minecraftforge.gradle'
+// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+apply plugin: 'org.parchmentmc.librarian.forgegradle'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+apply plugin: "org.spongepowered.mixin"
 
 version = "${mc_version}-${mod_version}"
 group = 'net.akaneo.simplefastfood' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -101,6 +119,7 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    jcenter()
     maven {
         // location of the maven that hosts JEI files
         name = "Progwml6 maven"
@@ -117,10 +136,13 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven { url "https://maven.ryanliptak.com/" }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.19.2-43.1.52'
+
+    implementation fg.deobf("curse.maven:blueprint-382216:${blueprint_version}")
 
     // compile against the JEI API but do not include it at runtime
     compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}"))
@@ -129,6 +151,10 @@ dependencies {
     runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
 
     runtimeOnly fg.deobf("curse.maven:worldedit-225608:${worldedit_version}")
+    runtimeOnly fg.deobf("curse.maven:quark-243121:${quark_version}")
+    runtimeOnly fg.deobf("curse.maven:autoreglib-250363:${autoreglib_version}")
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

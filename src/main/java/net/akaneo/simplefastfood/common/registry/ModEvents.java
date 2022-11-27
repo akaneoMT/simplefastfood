@@ -48,6 +48,15 @@ public class ModEvents {
             }
             if (event.getType() == ModVillagers.FAST_FOOD_WAITER.get()) {
                 Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+                ItemStack stack = new ItemStack(ModItems.ONION_RINGS.get(), 1);
+                int villagerLevel = 1;
+
+                trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                        new ItemStack(Items.GOLD_NUGGET, 3),
+                        stack, 10, 5, 0.0F));
+            }
+            if (event.getType() == ModVillagers.FAST_FOOD_WAITER.get()) {
+                Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
                 ItemStack stack = new ItemStack(ModItems.LETTUCE_SALAD.get(), 1);
                 int villagerLevel = 1;
 
@@ -246,7 +255,7 @@ public class ModEvents {
             }
             if (event.getType() == ModVillagers.FAST_FOOD_WAITER.get()) {
                 Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
-                ItemStack stack = new ItemStack(ModItems.RED_BERRIES_ICE_CREAM.get(), 1);
+                ItemStack stack = new ItemStack(ModItems.SWEET_BERRIES_ICE_CREAM.get(), 1);
                 int villagerLevel = 5;
 
                 trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
