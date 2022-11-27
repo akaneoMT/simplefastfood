@@ -1,10 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:bread",
-      "item": "minecraft:rotten_flesh"
-    }
+    "ingredients": [
+      {
+        "item": "minecraft:bread"
+      },
+      {
+        "item": "minecraft:rotten_flesh"
+      }
   ],
   "result": {
     "item": "simplefastfood:rotten_flesh_burger",

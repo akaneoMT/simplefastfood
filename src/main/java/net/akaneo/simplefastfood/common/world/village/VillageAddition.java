@@ -76,22 +76,22 @@ public class VillageAddition {
         // Note, the resourcelocation is getting the pool files from the data folder. Not assets folder.
         addBuildingToPool(templatePoolRegistry, processorListRegistry,
                 new ResourceLocation("minecraft:village/plains/houses"),
-                "simplefastfood:village/houses/plains_fast_food", 40);
+                "simplefastfood:village/houses/plains_fast_food", 20);
 
         addBuildingToPool(templatePoolRegistry, processorListRegistry,
                 new ResourceLocation("minecraft:village/snowy/houses"),
-                "simplefastfood:village/houses/snowy_fast_food", 40);
+                "simplefastfood:village/houses/snowy_fast_food", 20);
 
         addBuildingToPool(templatePoolRegistry, processorListRegistry,
                 new ResourceLocation("minecraft:village/savanna/houses"),
-                "simplefastfood:village/houses/savanna_fast_food", 40);
+                "simplefastfood:village/houses/savanna_fast_food", 20);
 
         addBuildingToPool(templatePoolRegistry, processorListRegistry,
                 new ResourceLocation("minecraft:village/taiga/houses"),
-                "simplefastfood:village/houses/taiga_fast_food", 40);
+                "simplefastfood:village/houses/taiga_fast_food", 20);
 
         addBuildingToPool(templatePoolRegistry, processorListRegistry,
                 new ResourceLocation("minecraft:village/desert/houses"),
-                "simplefastfood:village/houses/desert_fast_food", 40);
+                "simplefastfood:village/houses/desert_fast_food", 20);
     }
 }

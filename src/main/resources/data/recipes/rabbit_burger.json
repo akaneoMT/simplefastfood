@@ -1,10 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:bread",
-      "item": "minecraft:cooked_rabbit"
-    }
+    "ingredients": [
+      {
+        "item": "minecraft:bread"
+      },
+      {
+        "item": "minecraft:cooked_rabbit"
+      }
   ],
   "result": {
     "item": "simplefastfood:rabbit_burger",

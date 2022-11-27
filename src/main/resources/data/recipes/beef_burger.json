@@ -1,10 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:bread",
-      "item": "minecraft:cooked_beef"
-    }
+    "ingredients": [
+      {
+        "item": "minecraft:bread"
+      },
+      {
+        "item": "minecraft:beef_pork"
+      }
   ],
   "result": {
     "item": "simplefastfood:beef_burger",
